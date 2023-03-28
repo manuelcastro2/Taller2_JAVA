@@ -1,0 +1,35 @@
+body{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.caja-panel{
+    width: 60%;
+    height: 40%;
+    border: none;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    background-color:rgba(255, 255, 255, 0.25);
+}
+.caja-titulo{
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.caja-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.caja-contenido p{
+    font-size: 15px;
+    text-align: center;
+}
+.caja-contenido span{
+    font-weight: 600;
+    font-size: 17px;
+}
