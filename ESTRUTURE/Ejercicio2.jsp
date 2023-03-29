@@ -9,17 +9,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/Ejercicio1.css">
-    <title>Ejercicio1</title>
+    <link rel="stylesheet" href="../CSS/Ejercicio2jsp.css">
+    <title>DATOS EJERCICIO 2</title>
 </head>
 <body>
         <div class="caja-panel">
             <h1 class="caja-titulo">
-                Ejercicio1 JSTL
+                DATOS
             </h1>
             <div class="caja-contenido">
-                <p><span>Cadena de caracteres: </span><c:out value="1+2+3"/></p><br>
-                <p><span>Suma de valores: </span><c:out value="${1+2+3}"/></p>
+                <p><span>Nombre: </span><c:out value="${param.nombre}"/></p>
+                <p><span>Primer Apellido: </span><c:out value="${param.apellido1}"/></p>
+                <p><span>Primer Apellido: </span><c:out value="${param.apellido2}"/></p>
             </div>
         </div>
 </body>

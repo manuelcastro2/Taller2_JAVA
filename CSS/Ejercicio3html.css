@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg,rgb(0, 0, 0),rgb(58, 58, 58),rgb(16, 16, 16));
+}
+
+.contenedor-todo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 75%;
+    border-radius: 20px;
+    background-color: black;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    height: 15%;
+}
+
+.contenedor-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 70%;
+}
+
+.contenedor-form div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    text-align: left;
+    outline: 0 none;
+    border-top: none;
+    border-left: none;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255);
+    padding: 0.6rem 1.2rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+label {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    transition: all .4s;
+}
+
+
+input:focus {
+    border-bottom: 1px solid rgb(212, 255, 0);
+}
+
+input:hover {
+    border-bottom: 1px solid rgb(0, 134, 134);
+}
+
+button {
+    background: linear-gradient(90deg, rgb(66, 189, 97), rgb(183, 210, 61), rgb(227, 84, 37));
+}
+
+button {
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    position: relative;
+    width: 100PX;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+a {
+    margin: 5px 0;
+    font-weight: 600;
+    color: white;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color:transparent;
+    transition: all .4s;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+a:focus{
+    transform: scale(1.1);
+}
+
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 10px;
+    border: 0 solid;
+    border-color: rgb(0, 0, 0) rgba(0, 0, 0, 0.7)rgba(0, 0, 0, 0.7)black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+    border-bottom-right-radius: 10px;
+    transition: .4s ease-out;
+}
+
+button:focus::before {
+    border-width: 15px;
+}
+
+.avertencia{
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    color: black;
+}

@@ -25,6 +25,11 @@ body {
     width: 100%;
 }
 
+.caja-form div{
+    position: relative;
+    margin: 0 10px;
+}
+
 button {
     border: none;
     outline: none;
@@ -41,11 +46,19 @@ button {
     overflow: hidden;
 }
 
-.boton1{
+.boton1 {
     background: linear-gradient(90deg, rgb(2, 0, 108), rgb(56, 0, 67), rgb(69, 0, 0));
 }
 
-button:hover {
+.boton2 {
+    background: linear-gradient(90deg, rgb(0, 108, 77), rgb(51, 67, 0), rgb(69, 31, 0));
+}
+
+.boton3 {
+    background: linear-gradient(90deg, rgb(108, 0, 101), rgb(67, 0, 0), rgb(69, 66, 0));
+}
+
+button:focus {
     transform: scale(1.1);
 }
 
@@ -62,6 +75,6 @@ button::before {
     transition: .4s ease-out;
 }
 
-button:focus::before {
+button:hover::before {
     border-width: 15px;
 }

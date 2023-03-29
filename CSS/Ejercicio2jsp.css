@@ -1,6 +1,5 @@
 body{
     height: 100vh;
-    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -9,10 +8,10 @@ body{
 .caja-panel{
     width: 60%;
     height: 40%;
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: none;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
-    background-color:rgba(255, 255, 255, 0.4);
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+    background-color:rgba(255, 255, 255, 0.25);
 }
 .caja-titulo{
     font-size: 35px;
