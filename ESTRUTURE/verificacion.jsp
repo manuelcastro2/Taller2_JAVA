@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Ejercicio2html.css">
-    <title>DATOS EJERCICIO 2</title>
+    <title>DATOS EJERCICIO 3</title>
 </head>
 <body>
 <div class="avertencia">
