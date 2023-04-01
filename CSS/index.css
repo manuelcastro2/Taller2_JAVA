@@ -20,9 +20,12 @@ body {
     padding: 5px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     height: 78%;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 0;
 }
 
 .caja-form div {
