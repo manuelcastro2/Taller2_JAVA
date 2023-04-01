@@ -45,10 +45,8 @@ font-weight: 500;
     border-radius: 10px;
     outline:  0 none;
     transition: all .4s;
-    border: none;
 }
 .caja-interaccion select:focus{
-    border-bottom: 2px solid blue;
 box-shadow: 1px 1px 10px 1px rgba(0, 0, 255, 0.5);
 }
 
