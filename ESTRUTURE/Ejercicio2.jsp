@@ -22,6 +22,10 @@
                 <p><span>Primer Apellido: </span><c:out value="${param.apellido1}"/></p>
                 <p><span>Primer Apellido: </span><c:out value="${param.apellido2}"/></p>
             </div>
+             <a data-text="Awesome" href="../index.html" class="button">
+        <span class="actual-text">&nbsp;volver&nbsp;</span>
+    <span class="hover-text" aria-hidden="true">&nbsp;VOLVER&nbsp;</span>
+</a>
         </div>
 </body>
 </html>

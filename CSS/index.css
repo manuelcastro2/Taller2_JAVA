@@ -47,23 +47,35 @@ button {
 }
 
 .boton1 {
-    background: linear-gradient(90deg, rgb(2, 0, 108), rgb(56, 0, 67), rgb(69, 0, 0));
+    background: #264653;
 }
 
 .boton2 {
-    background: linear-gradient(90deg, rgb(0, 108, 77), rgb(51, 67, 0), rgb(69, 31, 0));
+    background: #2a9d8f;
 }
 
 .boton3 {
-    background: linear-gradient(90deg, rgb(108, 0, 101), rgb(67, 0, 0), rgb(69, 66, 0));
+    background: #e9c46a;
 }
 
 .boton4 {
-    background: linear-gradient(90deg, rgb(7, 0, 108), rgb(0, 47, 67), rgb(0, 68, 69));
+    background: #f4a261;
 }
 
 .boton5 {
-    background: linear-gradient(90deg, rgb(156, 0, 130), rgb(50, 0, 143),rgb(165, 149, 0));
+    background: #e76f51;
+}
+
+.boton6 {
+    background: #219ebc;
+}
+
+.boton7 {
+    background: #023047;
+}
+
+.boton8 {
+    background: #283618;
 }
 
 button:focus {

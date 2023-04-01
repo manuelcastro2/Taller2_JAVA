@@ -1,40 +1,35 @@
 body{
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items:center;
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.caja-panel{
-    width: 60%;
-    height: 40%;
-    border: none;
-    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 25px;
-    background-color:rgba(255, 255, 255, 0.25);
-}
-.caja-titulo{
-    font-size: 35px;
-    text-align: center;
-    text-transform: uppercase;
-}
 
-.caja-contenido{
+.contenedor-todo{
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+    width: 100%;
+    height: 100%;
+}
+.contenedor-intermedio{
+    margin-top: 200px;
+    padding-top:34px ;
+    padding-bottom: 40px;
+    background: white;
+    width: 50%;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0,0.8);
+    border-radius: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.caja-contenido p{
-    font-size: 15px;
-    text-align: center;
-}
-.caja-contenido span{
-    font-weight: 600;
-    font-size: 17px;
-}
+}   
 
-.button {
+ /* button styling */
+ .button {
     --border-right: 6px;
     --text-stroke-color: rgba(255,255,255,0.6);
     --animation-color: #37FF8B;

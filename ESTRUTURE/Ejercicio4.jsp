@@ -9,15 +9,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/Ejercicio1.css">
+    <link rel="stylesheet" href="../CSS/Ejercicio4.css">
     <title>Ejercicio1</title>
 </head>
 <body>
-        <div class="caja-panel">
+        <div class="caja-all">
             <h1 class="caja-titulo">
                 Ejercicio4 JSTL
             </h1>
-            <div class="caja-contenido">
+            <div class="caja-interaccion">
                <p>resulatdo</p>
                <c:choose>
                 <c:when test="${param.lenguaje == 'Java'}">
@@ -34,6 +34,10 @@
                 </c:otherwise>
                 </c:choose>
             </div>
+            <a data-text="Awesome" href="../index.html" class="button">
+        <span class="actual-text">&nbsp;volver&nbsp;</span>
+    <span class="hover-text" aria-hidden="true">&nbsp;VOLVER&nbsp;</span>
+</a>
         </div>
 </body>
 </html>

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+.caja-all {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+
+.caja-contenido {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    gap: 20px 0;
+    box-shadow: inset 5px 5px 17px #525252,
+        inset -5px -5px 17px #000000;
+    transition: all 3s;
+}
+
+.caja-contenido:hover {
+    box-shadow: 5px 5px 17px #707070,
+        -5px -5px 17px #000000;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+}
+
+.container input {
+    border-radius: 5px;
+    width: 92%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #222;
+    padding: 8px;
+}
+
+.container label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: rgba(40, 40, 40, 0.7);
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.container input:valid~label,
+.container input:focus~label {
+    color: rgb(10, 131, 212);
+    transform: translateY(-15px);
+    font-size: .6rem;
+}
+
+
+.container i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #222;
+}
+
+.container i:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2196f3;
+    transition: all .5s;
+
+}
+
+.container input:focus~i::before {
+    background: rgb(119, 255, 0);
+}
+
+button {
+    margin: 12px;
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    background: #333333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+    font-family: 'Damion', cursive;
+    border: none;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    transition: 500ms;
+  }
+  
+  button:hover {
+    animation: a .6s 1 linear;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+
+  @keyframes a {
+    0% {
+      transform: scale(0.7, 1.3);
+    }
+  
+    25% {
+      transform: scale(1.3, 0.7);
+    }
+  
+    50% {
+      transform: scale(0.7, 1.3);
+    }
+  
+    75% {
+      transform: scale(1.3, 0.7);
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
