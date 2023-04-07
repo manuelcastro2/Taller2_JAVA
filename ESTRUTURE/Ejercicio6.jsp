@@ -10,28 +10,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/Ejercicio6.css">
-    <title>Ejercicio6</title>
+    <link rel="stylesheet" href="../CSS/Ejercicio5.css">
+    <title>Ejercicio5</title>
 </head>
 
 <body>
-    <div class="contenedor-todo">   
+    <div class="contenedor-todo">
+    <h1>EJERCICIO 5</h1>    
        <div class="contenedor-intermedio">
-       <h1>EJERCICIO 6</h1> 
-            <c:forEach begin="1" end="24" step="2" var="hour" varStatus="status">
-            <p><c:out value="${hour}"/>
-            <c:if test="${status.first}">
-            <strong>Estoy en uno</strong>
+            <c:catch var="error01">
+                <%valor=Integer.parseInt(request.getParameter("parametro"));%>
+            </c:catch>
+            <c:if test="${not empty error01}">
+                <div class="contenedor-errores">
+                    <strong>Se produjo un error: </strong>${error01}
+                </div>
             </c:if>
-
-            <c:if test="${status.count==5}">
-            <strong>Estoy en la iteracion numero 5</strong>
+            <c:if test="${valor!=0 && empty error01}">
+                <div class="contenedor-resultado">
+                    <strong>Valor recibido: </strong><%out.print(valor);%>
+                </div>
             </c:if>
-            </p>
-            </c:forEach>
+       
+        <div class="contenedor-botones">
+            <form action="">
+                <input type="hidden" name="parametro" id="parametro" value="prueba">
+                <button class="boton1" type="submit">Enviar 'prueba'</button>
+            </form>
+            <form action="">
+                <input type="hidden" name="parametro" id="parametro" value="1234">
+                <button class="boton2" type="submit">Enviar '1234'</button>
+            </form>
+            <form action="">
+                <button class="boton3" type="submit">Enviar 'No enviar parametro'</button>
+            </form>
+       </div>
         </div>
-          <a data-text="Awesome" href="../index.html" class="button">
-    <span class="actual-text">&nbsp;volver&nbsp;</span>
+        <a data-text="Awesome" href="../index.html" class="button">
+        <span class="actual-text">&nbsp;volver&nbsp;</span>
     <span class="hover-text" aria-hidden="true">&nbsp;VOLVER&nbsp;</span>
 </a>
     </div>

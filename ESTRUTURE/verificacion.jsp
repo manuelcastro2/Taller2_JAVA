@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Ejercicio2html.css">
-    <title>DATOS EJERCICIO 3</title>
+    <title>DATOS EJERCICIO 4</title>
 </head>
 <body>
 <div class="avertencia">
@@ -21,7 +21,7 @@ test="${empty param.nombre}">
 </c:redirect>
 </c:if>
 <c:if test="${empty param.apellido1}">
-<c:redirect url="Ejercicio3.jsp">
+<c:redirect url="Ejercicio4.jsp">
 <c:param name="error" value="Primer apellido obligatorio"/>
 </c:redirect>
 </c:if>
